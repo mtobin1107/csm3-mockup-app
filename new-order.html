@@ -9,43 +9,58 @@
   <h1 class="mb-4">New Order Form</h1>
 
   <form>
-    <fieldset class="mb-4">
-      <legend>Company Info</legend>
-      <div class="mb-3"><input class="form-control" placeholder="Company Name"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Company Number"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Shipping Address"></div>
-      <div class="mb-3"><input class="form-control" placeholder="City"></div>
-      <div class="mb-3"><input class="form-control" placeholder="State"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Postal Code"></div>
-    </fieldset>
 
-    <fieldset class="mb-4">
-      <legend>Patient Info</legend>
-      <div class="mb-3"><input class="form-control" placeholder="First Name"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Last Name"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Age"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Sex"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Weight"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Phone"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Email"></div>
-    </fieldset>
+    <!-- Company & Patient Info Side-by-Side -->
+    <div class="row mb-4">
+      <!-- Company Info -->
+      <div class="col-md-6">
+        <fieldset>
+          <legend>Company Info</legend>
+          <div class="mb-3"><input class="form-control" placeholder="Company Name"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Company Number"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Shipping Address"></div>
+          <div class="mb-3"><input class="form-control" placeholder="City"></div>
+          <div class="mb-3"><input class="form-control" placeholder="State"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Postal Code"></div>
+        </fieldset>
+      </div>
 
+      <!-- Patient Info -->
+      <div class="col-md-6">
+        <fieldset>
+          <legend>Patient Info</legend>
+          <div class="mb-3"><input class="form-control" placeholder="First Name"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Last Name"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Age"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Sex"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Weight"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Phone"></div>
+          <div class="mb-3"><input class="form-control" placeholder="Email"></div>
+        </fieldset>
+      </div>
+    </div>
+
+    <!-- Product Info in One Row -->
     <fieldset class="mb-4">
       <legend>Product Info</legend>
-      <div class="mb-3"><input class="form-control" placeholder="Shoe Size"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Width"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Style"></div>
-      <div class="mb-3"><input class="form-control" placeholder="Color"></div>
-      <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="reverse">
-        <label for="reverse" class="form-check-label">Reverse?</label>
+      <div class="row g-3 align-items-end">
+        <div class="col-md"><input class="form-control" placeholder="Shoe Size"></div>
+        <div class="col-md"><input class="form-control" placeholder="Width"></div>
+        <div class="col-md"><input class="form-control" placeholder="Style"></div>
+        <div class="col-md"><input class="form-control" placeholder="Color"></div>
+        <div class="col-md-auto form-check">
+          <input type="checkbox" class="form-check-input" id="reverse">
+          <label for="reverse" class="form-check-label">Reverse?</label>
+        </div>
       </div>
     </fieldset>
 
+    <!-- Buttons -->
     <div class="d-flex gap-3">
       <button type="button" class="btn btn-secondary">Scan</button>
       <button type="submit" class="btn btn-primary">Save</button>
     </div>
+
   </form>
 </body>
 </html>
